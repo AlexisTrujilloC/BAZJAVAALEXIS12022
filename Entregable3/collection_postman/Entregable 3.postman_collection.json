@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "7ed2ce9b-3d59-415c-916e-68088cb08148",
+		"name": "Entregable 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18073125"
+	},
+	"item": [
+		{
+			"name": "API publica",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/wizeline/entregable/v1/api/publica/bromas?lenguaje=es&cantidad=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wizeline",
+						"entregable",
+						"v1",
+						"api",
+						"publica",
+						"bromas"
+					],
+					"query": [
+						{
+							"key": "lenguaje",
+							"value": "es"
+						},
+						{
+							"key": "cantidad",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/wizeline/entregable/v1/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wizeline",
+						"entregable",
+						"v1",
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Diego Alexis\",\r\n    \"correo\":\"diego@gmail.com\",\r\n    \"password\":\"diegopass\",\r\n    \"edad\":14\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/wizeline/entregable/v1/api/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wizeline",
+						"entregable",
+						"v1",
+						"api",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuario por id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/wizeline/entregable/v1/api/usuario/63437910f6c1e91bae799813",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wizeline",
+						"entregable",
+						"v1",
+						"api",
+						"usuario",
+						"63437910f6c1e91bae799813"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/wizeline/entregable/v1/api/usuario/634383d27a8d0a565aab7ec8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wizeline",
+						"entregable",
+						"v1",
+						"api",
+						"usuario",
+						"634383d27a8d0a565aab7ec8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Diego Trujillo\",\r\n    \"correo\":\"alexis@gmail.com\",\r\n    \"password\":\"diegopass\",\r\n    \"edad\":14\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/wizeline/entregable/v1/api/usuario/63437910f6c1e91bae799813",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wizeline",
+						"entregable",
+						"v1",
+						"api",
+						"usuario",
+						"63437910f6c1e91bae799813"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
